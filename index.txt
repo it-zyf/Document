@@ -1,0 +1,160 @@
+PUT /dev_data2
+{
+  "settings":{
+    "number_of_shards":1,
+    "number_of_replicas":1
+  },
+  
+  "mappings":{
+    
+    "properties":{
+      "id":{
+        "type":"keyword"
+      },
+      "dataSource":{
+        "type":"keyword"
+      },
+      "currencyId":{
+        "type":"keyword"
+      },
+      "platform":{
+        "type": "keyword"
+      },
+      "type":{
+        "type": "keyword"
+      },
+      "loopId":{
+        "type": "text",
+        "analyzer": "ik_max_word"
+      },
+      "loopTitle":{
+        "type": "text",
+        "analyzer": "ik_max_word"
+      },
+      "loopCode":{
+        "type": "text",
+        "analyzer": "ik_max_word"
+      },
+      "loopType":{
+        "type": "keyword"
+      },
+      "loopLevel":{
+        "type": "keyword"
+      },
+      "findTime":{
+        "type":"keyword"
+      },
+      "recordingTime":{
+        "type":"keyword"
+      },
+      "assetsName":{
+        "type":"text",
+        "analyzer": "ik_max_word"
+      },
+      "assetsIP":{
+        "type": "keyword"
+      },
+      "patchName":{
+        "type": "text",
+        "analyzer": "ik_max_word"
+      },
+      "toolName":{
+        "type":"text",
+        "analyzer": "ik_max_word"
+      },
+      "knowledgeName":{
+        "type": "text",
+        "analyzer": "ik_max_word"
+        
+      },
+      "assetsAddress":{
+        "type": "keyword"
+      },
+      "assetsType":{
+        "type": "keyword"
+      },
+      
+      "webOrg":{
+        "type": "keyword"
+      },
+      "loopCount":{
+        "type": "keyword"
+      },
+      
+      "webOrIt":{
+        "type": "keyword"
+      },
+      
+          "hostName":{
+        "type": "keyword"
+      },
+      
+          "os":{
+        "type": "keyword"
+      },
+      
+      
+          "riskScore":{
+        "type": "keyword"
+      },
+      
+      
+          "patchNo":{
+        "type": "keyword"
+      },
+      
+          "patchSize":{
+        "type": "keyword"
+      },
+          "riskLevel":{
+        "type": "keyword"
+      },
+      
+      "cveNo":{
+        "type": "keyword"
+      },
+      
+      "releaseTime":{
+        "type": "keyword"
+      },
+      
+      "pocType":{
+        "type":"keyword"
+      },
+      
+      "isPocStannd":{
+        "type":"keyword"
+      },
+      "isHavePocCode":{
+        "type":"keyword"
+      },
+      
+      "isHavePocFile":{
+        "type":"keyword"
+      },
+      "toolType":{
+        "type": "keyword"
+      },
+      "edition":{
+        "type":"keyword"
+      },
+      "link":{
+        "type": "keyword"
+      },
+      "label":{
+        "type":"keyword"
+      },
+      "summary":{
+        "type": "text"
+      },
+      
+      "dataFlag":{
+        "type": "keyword"
+      }
+      
+      
+      
+    }
+  }
+  
+}

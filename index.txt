@@ -158,3 +158,15 @@ PUT /dev_data2
   }
   
 }
+
+
+
+
+POST /dev_data/_delete_by_query
+{
+  "query":{
+    "match": {
+      "dataSource": "4"
+    }
+  }
+}
